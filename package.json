@@ -1,0 +1,12 @@
+{
+  "name": "gestion-combustible",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "MVP local: Python + SQLite + interfaz web nativa",
+  "scripts": {
+    "check:web": "node --check web/app.js",
+    "start": "python3 -m backend.server",
+    "test": "python3 -m unittest discover -s tests -v"
+  }
+}

@@ -1,0 +1,17 @@
+# Gestión de combustible
+- Correctitud, integridad y trazabilidad primero. Priorizar MVP demostrable el 12 septiembre 2026.
+- Terpel válido es la fuente primaria; TSO eficiencia es respaldo explícito, no reemplazo silencioso.
+- Con varias tanqueadas excluir los galones de la inicial; con una buscar última válida histórica. Sin histórico: información insuficiente.
+- Nunca inventar datos ni borrar originales. Conservar archivos, filas, importaciones e históricos.
+- Asignaciones de proyecto por vigencia; líneas base versionadas, nunca sobrescritas.
+- Correcciones manuales requieren motivo, actor, original, nuevo y auditoría.
+- Períodos cerrados son snapshots inmutables; no recalcularlos silenciosamente.
+- Motor independiente de UI. Ejecutar pruebas tras cambios importantes y mantener proyecto ejecutable.
+- Revisar este archivo al iniciar cada fase. Documentar supuestos conservadores.
+- Documentos: retirar no destruye archivos ni registros. Mantener fuentes compartidas y snapshots cerrados.
+- Reemplazos atómicos: si el nuevo archivo falla o carece de filas válidas, la carga anterior sigue activa.
+- Maestros importados guardan antes/después; bloquear retirada ante dependencias posteriores o falta de estado previo.
+- Toda retirada invalida períodos abiertos y suspende sus overrides de km; no presentar resultados obsoletos.
+- Flota PROING y parámetros de líneas base son permanentes, no cargas mensuales.
+- El maestro de flota no crea asignaciones aunque incluya Proyecto; el archivo mensual Placa/Proyecto sí, desde el primer día del mes.
+- Análisis mensual solo solicita Terpel, TSO eficiencia, TSO sumarizado y base mensual de placas/proyectos.
